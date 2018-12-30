@@ -8,7 +8,7 @@ import java.io.InputStream;
 public class TextReader extends TimedTextReaderBase {
 
     @Override
-    public TextModel parse(String stream) {
+    public TextModel parse(String text) {
         TextModel model = new TextModel(null);
         return model;
     }

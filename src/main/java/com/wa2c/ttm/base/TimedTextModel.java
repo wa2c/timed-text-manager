@@ -13,6 +13,10 @@ public abstract class TimedTextModel {
     protected String rawText = "";
     protected String plainText = "";
 
+    public TimedTextModel() {
+        this.timedTextLineList = new ArrayList<>();
+    }
+
     public TimedTextModel(List<TimedTextLine> timedTextLines) {
         this.timedTextLineList = timedTextLines;
     }

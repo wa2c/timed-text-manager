@@ -9,8 +9,5 @@
         <module name="timed-text-manager" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="timed-text-manager" target="7" />
-    </bytecodeTargetLevel>
   </component>
 </project>

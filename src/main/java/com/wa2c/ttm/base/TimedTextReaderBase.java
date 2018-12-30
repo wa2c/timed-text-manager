@@ -53,6 +53,8 @@ public abstract class TimedTextReaderBase {
         }
     }
 
-    public abstract TimedTextModel parse(String parse);
+    public abstract TimedTextModel parse(String text);
+
+    public abstract long getTimeFromText(String time);
 
 }
