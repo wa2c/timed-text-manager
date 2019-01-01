@@ -42,4 +42,17 @@ public class TimedTextUtil {
             return text.replaceAll("^" + UNICODE_SPACES + "*", "").replaceAll(UNICODE_SPACES + "*$", "");
     }
 
+    public static String getColorHexFromInt(int intColor) {
+        return String.format("#%06X", 0xFFFFFF & intColor);
+    }
+
+    public static int getColorIntFromHex(String hexColor) {
+        if (hexColor == null || hexColor.isEmpty())
+            return 0;
+        hexColor = hexColor.trim();
+        if (hexColor.charAt(0) == '#')
+            hexColor = hexColor.substring(1);
+        return (Integer.parseInt(hexColor.substring( 0,2 ), 16) << 24) + Integer.parseInt(hexColor.substring( 2 ), 16);
+    }
+
 }

@@ -1,5 +1,7 @@
 package com.wa2c.ttm.base;
 
+import com.wa2c.ttm.util.TimedTextConstant;
+
 import java.util.List;
 import java.util.TreeMap;
 
@@ -10,6 +12,7 @@ public class TimedTextLine {
     private long endTime;
     private List<TimedTextPhrase> timedTextPhraseList;
     private TreeMap<Long, Integer> timeTable;
+    private int color = TimedTextConstant.DEFAULT_TEXT_COLOR;
 
 
     public String getText() {

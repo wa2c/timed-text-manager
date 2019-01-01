@@ -134,7 +134,8 @@ public class LrcReader extends TimedTextReaderBase {
      */
     @Override
     public long getTimeFromText(String timeText) {
-        if (timeText == null) return 0;
+        if (timeText == null)
+            return 0;
 
         try {
             String[] timeTexts = timeText.trim().split("[:\\.]");

@@ -13,6 +13,8 @@ public abstract class TimedTextModel {
     protected String rawText = "";
     protected String plainText = "";
 
+    protected long offset = 0;
+
     public TimedTextModel() {
         this.timedTextLineList = new ArrayList<>();
     }
@@ -32,6 +34,15 @@ public abstract class TimedTextModel {
 
     public String getPlainText() {
         return this.plainText;
+    }
+
+
+    public long getOffset() {
+        return offset;
+    }
+
+    public void setOffset(long offset) {
+        this.offset = offset;
     }
 
 }
