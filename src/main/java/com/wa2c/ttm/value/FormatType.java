@@ -11,7 +11,18 @@ public enum FormatType {
     // Subtitle
     SRT("srt", new String[]{"srt"}),
     STL("stl", new String[]{"stl"}),
-    TTML("ttml", new String[]{"ttml"}),
+    SCC("scc", new String[]{"scc"}),
+    SSA("ssa", new String[]{"ssa", "ass"}),
+    TTML("ttml", new String[]{"ttml", "xml"}),
+    QTTXT("qttxt", new String[]{"qt.txt"}),
+    VTT("vtt", new String[]{"vtt"}),
+    DFXP("dfxp", new String[]{"dfxp"}),
+    SMI("smi", new String[]{"smi"}),
+    SUB("sub", new String[]{"sub"}),
+    RT("rt", new String[]{"rt"}),
+    YOUTUBE("sbv", new String[]{"sbv"}),
+    TX3G("tx3g", new String[]{""}),
+    MPSUB("mpsub", new String[]{""}),
 
     // Media
     UNSYNC("unsync", new String[]{}),
